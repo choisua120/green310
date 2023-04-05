@@ -1,0 +1,130 @@
+<!-- html5 선언문 -->
+<!DOCTYPE html>
+<!-- 언어설명 -->
+<html lang="ko">
+<!-- 설정공간 -->
+
+<head>
+    <!-- 유니코드설정 -->
+    <meta charset="UTF-8">
+    <!-- 브라우저사용법 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 반응형웹선언문 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 상단제목설정 -->
+    <title>글자태그</title>
+</head>
+<!-- 화면설정 -->
+
+<body>
+    <!-- 모든내용은태그내부의요소로작성하며글자단독으로움직이지않음 -->
+    <h1>글자태그</h1>
+
+    <p>제목태그와문단태그의정리<br>
+        제목(heading),단락(paragrahp),줄바꿈(break),수평줄(hrizontal)</p>
+
+    <h3>제목태그</h3>
+    <p>제목 태그는 h1~h6까지 숫자가 작아질 수록 글자가 커지며 특성도 커진다</p>
+
+    <h1>제목태그-h1</h1>
+    <h2>제목태그-h2</h2>
+    <h3>제목태그-h3</h3>
+    <h4>제목태그-h4</h4>
+    <h5>제목태그-h5</h5>
+    <h6>제목태그-h6</h6>
+
+    <p>제목태그의특징<br>
+        - 글씨크기가 다르다(h3의 크기가 1입니다.) <br>
+        - 볼드효과를 가진다<br>
+        - 자동줄바꿈기능이 있음</p>
+
+    <p>주의사항<br>
+        - h1은 주로 로고를 쓸떄 사용하므로 문서 내부에서는 1번만 사용하기를 권한다<br>
+        - 자동줄바꿈의 기능을 블럭이라고 함 <br>
+        - 블럭내부의 블럭을 담지 못함
+    </p>
+
+    <h3>단락태그</h3>
+    <p>문장과 같은 텍스트 요소들을 가두는 역할</p>
+    <p>p태그 특성<br>
+        - 자동 줄바꿈 기능<br>
+        - 위아래 여백을 가지고 있음<br></p>
+    <p>주의사항 <br>
+        - 블럭 내부에 블럭을 담지 못함 </p>
+
+<h3>줄바꿈태그</h3>
+<p>br태그<br>
+    - 문맥상 강제적으로 줄바꿈늘 하고 싶을 때 사용, 닫힘 태그 없음\</p>
+
+<h3>구분석 태그</h3>
+<p>hr태그 <br>
+- 구분선을 그리고 싶을 때 사용, 화면의 가로시작부터 끝까지 가득 채움, 닫힘 태그 없음  </p>
+
+
+<!-- 자동 들여쓰기 정렬법 
+    - 컨트롤 + a, 컨트롤 + k, f -->
+
+
+<h3>링크태그</h3>
+<p>a태그<br>
+- 지정된 주소로 보내는 태그로 태그 내부에 사용하며 지정주소속성능을 사용한다.</p>
+<p>href 속성 = "지정주소설정" 예) href=http:
+taget속성 = "_balnk" 새창 열림<br>
+속성은 여러개를 쓸 수 있으며 띄어쓰기로 다음 속성을 알린다 </p>
+
+<p>a태그 특성 <br>
+    - 밑줄 생성 <br>
+    - 색깔이 파란색으로 나타남<br>
+    - 모든 태그 내부에 작성하며 특별한 줄바꿈이 일어나지않음/ <br>
+    단독적으로 사용가능하나 블럭태그를 담을 수 없음(인라인 태그 속성)
+
+</p>
+
+<h3>글자속성태그</h3>
+<p>텍스트관련요소로 강조,최소,첨자 등을 표현 <br>
+모든 태그 내부에 첨부가 가능한 일렬 방식 (inline방식) </p>
+<h4>강조태그<br>
+    - b태그, strong태그 <br>
+(볻드체처럼 글씨가 붉게 쓰여짐)</h4>
+<p>b태그는 단순 보여짐 효과, strong은 중요하다라는 의미 부여</p>
+<p>Lorem ipsum dolor sit amet <b>consectetur</b> <strong>adipisicing elit</strong>. Quisquam ad non ab magni amet ipsam laborum consequatur inventore similique, nam vero eum, aspernatur dolor distinctio facilis temporibus iste id natus.</p>
+
+<h4>기울임태그<br>
+    - i태그, em태그(이텔릭체처럼 글씨가 기울여써짐</h4>
+<p>i태그는 단순보여짐 효과, em는 중요하다라는 의미 부여</p>
+<p>Lorem ipsum dolor sit amet <i>consectetur</i> <em>adipisicing elit</em>. Aliquid voluptas harum esse facere ex sed accusamus pariatur labore, ducimus laborum quo beatae, fugit hic quisquam? Iusto debitis vitae dolorem quas.</p>
+
+<h4>취소선,밑줄 - del태그,isn태그</h4>
+<p>del <br>
+     - delete의 약자로 취소를 뜻하며 글자를 가로지른 선 </p>
+<p>ins <br>
+- insert의 약자로 삽입하다라는 뜻의 글자의 밑줄을 삽입 </p>
+<p>Lorem ipsum dolor sit, amet <del>consectetur</del> <ins>adipisicing elit</ins>. Sunt earum commodi ea consectetur eveniet deserunt veritatis corporis harum impedit ullam nobis autem qui corrupti accusamus, eaque odit eos, ab nesciunt?</p>
+
+<h4>글자의크기 태그<br>
+- sub,sup,small</h4>
+<p>sub <br>
+- subscript의 의미로 아래 첨자를 뜻한다. </p>
+<p>sup <br>
+- supersubscrte의 의미로 윗첨자를 뜻한다.</p>
+<p>small <br>
+- p태그 글씨도 한단계 글씨로 쓰여지며,<br>
+저작권, 덧붙임글자, 법률표기등의 footer에서 주로 쓰임 </p>
+<sub>
+    <p>Lorem ipsum dolor, sit amet <sub>consectetur</sub>  <sup>adipisicing elit</sup>. In provident molestiae corrupti sit, <small>suscipit sed neque repellat </small>ullam, consectetur saepe dignissimos nostrum perspiciatis voluptate praesentium quo nisi accusantium delectus vitae.</p>
+</sub>
+
+
+
+<h2><a href="ex_song.html"> 예제만들기</a> </h2>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
