@@ -1,0 +1,96 @@
+/* 유니코드를 html과 통일시킨다 */
+
+@charset 'utf-8';
+/* import로 해야함 */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* 전체 여백 삭제 
+오타로 인한 오류 찾기 쉬움*/
+*{margin: 0;
+padding: 0;}
+section* {box-sizing: border-box;
+    /* 화면 밀림 방지, 남는 공간 없이 화면 영역에 딱 맞게 해줌*/
+    background-attachment: fixed;}
+
+
+section h1{font-family: 'Dancing Script', cursive;
+font-size: 112px;
+color: #555;
+margin-bottom: 20px;}
+
+section p {font-size: 16px;
+    /* 16px=기본 폰트 사이즈 */
+color: rgba(0, 0, 0, 0.5);}
+
+/* 타이틀박스 설정 */
+.titleBox
+{height: 100vh;
+    /* 숫자vh - 화면에 보이는 공간만큼 설정 반응형 웹 단위 */
+background-color: aqua;
+background-image: url(../img/bread1.jpg);
+/*../이름/ -  css 폴더 밖에 있는 것 부르기  */
+background-size: cover;
+/* cover - 배경이미지가 짤리더라도 화면의 영역을 꽉 채움 */
+background-repeat: no-repeat;
+background-position: center center;
+text-align: center;
+padding-top: 10vh}
+/* 메뉴박스 설정 */
+.menuBox 
+{height: 100vh;
+background-image: url(../img/bread2.jpg);
+background-size: cover;
+background-position:  center center;
+padding-top: 15vh;
+padding-left: 10vw;
+/* 마진을 쓰면 화면이 밀림  
+밀리면 box-sizing: border-box 쓰기*/
+box-sizing: border-box;
+/* section* {box-sizing: border-box;}
+이거 써서 없애도 됨 */}
+.menuBox ul 
+{margin-left: 50px;}
+.menuBox li
+{margin-bottom: 5px;
+padding-left: 10px;}
+.menuBox span
+{width: 150px;
+display: inline-block;
+/* 스팬은 인라인 성질이 있어 display: inline-block 사용*/}
+/* 컨텍트 박스 설정 */
+.contactBox
+{height: 100vh;
+background-image: url(../img/cafe.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+text-align: center;
+padding-top: 10vh}
+.contactBox form 
+{margin-top: 30px;
+margin-bottom: 30px;}
+.contactBox input
+{width: 200px;
+padding: 30px 20px ;
+font-size: 32px;
+border-radius: 5px;
+/* 모서라 둥금 효과 */
+background-color: #555;
+border: none;
+color: white;}
+.contactBox ul
+{display: flex;
+/* 속에 있는 애들 가로 설정 */
+list-style: none;
+/* li 말고 ul,ol에 해야 함  */
+justify-content: center;
+/* flex에서 사용 / 자체적인 내용 자기만 제어할 거야~ */}
+.contactBox li a
+/* a한테 해야 함 li x */
+{color: #555;
+text-decoration: none;
+padding: 10px ;
+display: block;
+/* li와 a의 공간 값이 같아져서 안 나려감 */}
+.contactBox li a:hover
+{opacity: 0.5;}
+/* 마우스 올렸을 때 색상 변화 */
