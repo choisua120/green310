@@ -1,0 +1,57 @@
+/* 유니코드 작성 */
+@charset "utf-8" ;
+/* 서체 적용 */
+.font001 {font-family: "궁서",serif;}
+/* , = 끝났다라는 표현  */
+/* 크기 적용 */
+.font002 {font-size: 12px}
+/* 기울기 적용 */
+.font003 {font-style: italic;}
+/* 글자 변형 적용 */
+.font004 span{font-variant: small-caps;}
+/* 글자 두께 적용 */
+.font005 {font-weight: 600;}
+/* 글자 행간 적용 */
+.font006 {line-height: 0.8;}
+.font007 {line-height: 1.8;}
+/* 폰트 일렬 적용 */
+.font008 {color: darkblue;
+    font:bold italic small-caps 20px/1.4 '궁서, serif'}
+.font009 {color: darkgreen;
+font: bold 32px "나눔고딕, sans-serif";}
+.font010 {color: blueviolet;
+font: italic 32px/1.2 "나눔명조, serif";}
+/* text-aline 설정 */
+.aline p {width: 400px;
+background-color: paleturquoise;}
+.aline p:nth-child(1) {text-align: center;}
+.aline p:nth-child(2) {text-align: right;}
+.aline p:nth-child(3) {text-align: left;} /* text-align 기본값 */
+.aline p:nth-child(4) {text-align: justify;}
+/* text-decoration 설정 */
+.deco p {width: 400px;
+    background-color: gray;}
+    .deco p:nth-child(1) {text-decoration: none;}
+    .deco p:nth-child(2) {text-decoration: underline;}
+    .deco p:nth-child(3) {text-decoration: line-through;} 
+    .deco p:nth-child(4) {text-decoration: overline;}
+
+/* text-transform 설정 */
+.trans p {border: 2px solid darkgray;
+    padding: 10px;
+    background-color: gainsboro;}
+    .trans p {text-transform: uppercase;}
+    .trans p {text-transform: lowercase;}
+    .trans p {text-transform: capitalize;}
+/* text-indent 설정 */
+.indent p {width: 800px ; border: 1px solid black;
+    padding: 10px;
+background-color: gainsboro;
+margin-left: 50px;}
+.indent p:nth-child(1) span {text-indent: 50px;
+display: inline-block;
+letter-spacing: 20px;}
+.indent p:nth-child(2) span{text-indent: -50px;
+display: inline-block ;}
+.indent p:nth-child(3) span{text-indent: -9999px;
+display: inline-block}
