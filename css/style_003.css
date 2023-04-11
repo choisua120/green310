@@ -1,0 +1,55 @@
+/* 유니코드 설정 */
+@charset 'UTF-8';
+/* 전체설정 */
+*{margin: 0;
+padding: 0;}
+ul , ol {list-style: none;} 
+a {text-decoration: none;
+color: #000;}
+/* p - 마진, 패딩 h - 패딩 
+ul,ol - 동그라미 리스트 a - 텍스트 데코, 색깔 */
+/* 가시속성 설정 (display)*/
+.layout001 {border: 1px solid ; #000;
+margin: 10px;
+padding: 10px;}
+.layout001 li {border-bottom: 5px solid yellow;
+margin-bottom: 5px;
+background-image: linear-gradient(90deg, #ccc 50%, #000 0);
+background-size: 8px;
+background-repeat: no-repeat;
+/* background-repeat 배경이미지 반복 여부 */
+padding-left: 10px;}
+.box001 {background-color: paleturquoise;
+padding: 40px;}
+.box001 span {border: 2px solid #000;/* 엔터, 띄어쓰기 사용시 보더 사이의 공간 생김 */
+padding: 20px;}
+.box001 span:nth-child(1) {display: inline;}
+.box001 span:nth-child(2) {display: inline-block;}
+.box001 span:nth-child(3) {display: block;}
+/* float속성 설정 */
+.layout002 {border: 1px solid ; #000;
+    margin: 10px;
+    padding: 10px;}
+.box002 {background-color: paleturquoise;
+padding: 40px;}
+.box002 li {border: 1px solid #000;
+padding: 10px;
+float: left;}
+.box002::after {content: ''; 
+    /* content - 요소를 주는 말 */
+display: block;
+clear: both;}
+/* clear fix - 양옆에 아무도 못 오게 하겠다 */
+.box002 li {border: 1px solid #000;
+    padding: 10px;
+    float: left;}
+.box002 li:nth-child(5) {float: right;}
+.box002 li:nth-child(4) {float: right;}
+/* flex속성 설정 */
+.box003 {background-color: paleturquoise;
+    padding: 40px;
+display: flex;
+justify-content: space-around;
+flex-direction: column-reverse;}
+.box003 li {border: 1px solid #000;
+        padding: 10px;}
