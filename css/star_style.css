@@ -1,0 +1,102 @@
+/* 유니코드 설정 */
+@charset 'utf-8';
+/* 전체 설정 */
+*{margin: 0;
+padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+color: #000;}
+/* 헤더 설정 */
+.header {width: 100%; 
+    /* 와이드는블럭이라서100% */
+    height: 120px;
+    background-color: #f6f5ef;
+    display: flex;
+    justify-content: space-around;
+    /* 가로 정렬 : 요소들 주위에 동일한 간격 */
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    /* order랑 같은 개념 position에서만 가능  */
+/* position: fixed - 헤더 분리 / 겹침,올림 가능 /바디기준(윈도우)*/
+    top: 0;
+    left: 0;}
+.logo {width: 75px;
+    height: 75px;
+    background-image: url(https://www.starbucks.co.kr/common/img/common/logo.png);
+    text-indent: -9999px; }
+    /* text-indent - 로고를 밖으로 날려서 잡히지 않음, 깜끔함} */
+.gnb ul {width: 70%;
+    display: flex;}
+.gnb li {padding: 0 10px;
+    justify-content: space-between;
+    /*space-between - 양끝 여백 동일 */}
+/* 비주얼 설정 */
+.visual {width: 100%;
+    height: 640px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_spring2_promotion_bg_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    /*background-size - 이미지가 비율에 맞춰서 들어가라 */
+    background-repeat: no-repeat;
+    margin-top: 120px;}
+/* 비주얼 내부의 이미지 이동하기 */
+.visual {position: relative;
+z-index: -1;}
+.love {position: relative;
+    top: 40%;
+    left: 150px;}
+    /* 부모만 기준이 될 수 있음 릴렉티브 = 비주얼 */
+/* 텍스트박스 설정 */
+.txtBox {width: 100%;
+    height: 62px;
+    display: flex;}
+.txtBox article {flex-grow: 1;
+    display: flex;
+    /* flex-grow - 같은 비율로 설정하겠다 */
+    justify-content: center;
+    align-items: center;}
+.txtBox .notice {background-color: #000;
+    color: #fff;}
+.txtBox .promo {background-color: #f6f5ef;}
+/* 리워드 설정 */
+.reward {width: 100%;
+    height: 320px;
+    background-color: #1e3932;}
+/* 시즌 설정 */
+.reward { width: 100%;
+    height: 640px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_spring_promotion_bg.jpg);
+    background-position: center center;
+    background-size: cover;}
+/* 코스타 설정 */
+.costa {width: 100%;
+    height: 320px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/230125_pc_reserve_bg.jpg);
+    background-position: center center;
+    background-size: cover;}
+/* 픽 설정 */
+.pick {width: 100%;
+    height: 800px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2023/2023_spring2_pick_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-attachment: fixed - 사진 화면에 맞게 고정 */
+}
+/* 리버스 설정 */
+.reserve {width: 100%;
+    height: 300px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2021/reserve_bg_pc.png);
+    background-position: center center;
+    background-size: cover;}
+/* 파인드 설정 */
+.find {width: 100%;
+    height: 300px;
+    background-image: url(https://www.starbucks.co.kr/common/img/main/store_bg.jpg);
+    background-position: center center;
+    background-size: cover;}
+/* 풋터 설정 */
+.footer {width: 100%;
+    height: 1080px;
+    background-color: #000;}
