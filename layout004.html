@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout004</title>
+    <link rel="stylesheet" href="css/grid-guide.css">
+</head>
+<body>
+    <div class="boxA">
+        <div class="boxA-1">로고</div>
+        <div class="boxA-2">메뉴</div>
+    </div>
+    <div class="boxB">이미지슬라이드</div>
+    <div class="boxC">
+        <div class="boxC-1">공지사항</div>
+        <div class="boxC-2">베너</div>
+        <div class="boxC-3">바로가기</div>
+    </div>
+    <div class="boxD">
+        <div class="boxD-1">하단로고</div>
+        <div class="boxD-2">
+            <div class="box001">하단로고</div>
+            <div class="box002">copyright</div>
+        </div>
+    </div>
+
+    <style>
+    /* 부모자after 정렬방식 float:left 활용 */
+    body {margin: 0}
+    .boxA:after {content: "";
+                display: block;
+                clear: both;}
+    .boxA-1 {float: left;
+            width: 20%;}
+    .boxA-2 {float: left;
+            width: 80%;} 
+    .boxC:after {content: "";
+                display: block;
+                clear: both;}
+    .boxC div {float: left; 
+                width: 33.3333%;}
+    .boxD:after {content: "";
+                display: block;
+                clear: both;}
+    .boxD {height: 450px;}
+    .boxD-1 {float: left;
+            width: 20%;
+            height: 100%;}
+    .box001 {float: right;
+            width: 80%;}
+    .box002 {float: right;
+            width: 80%;}
+    </style>
+</body>
+</html>
