@@ -1,0 +1,46 @@
+@charset 'utf-8';
+* {margin: 0;
+    padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+    color: black;}
+/* 박스3과 박스4의 가로정렬 */
+.boxA {display: flex;}
+.box3 {width: 70%;}
+.box4 {width: 30%;}
+/* 로고 설정 */
+.logo {}
+.logo h1 {font-size: 30px;}
+.logo h1 a {}
+/* 메뉴 설정 */
+.box2 {background-color: #7cbac1;}
+.menu {}
+.menu ul {display: flex;}
+        /* 왜 ul에다 플랙스를 줘야 하지 ???
+        li한테 주는게 맞다 아닌가???
+        li가 ul 안에 있으니까 걔네를 정렬시키갯다 .. 
+        라고 해서 그런듯 */
+.menu ul li {}
+.menu ul li a {display: block;
+                /* block 속성은 다른 새끼들 다밀어내고
+                니가 한줄 다 차지해라 ~ 라는 뜻임 */
+                padding: 15px;
+                font-size: 14px;}
+.menu ul li a:hover {background-color: #75dbe7;}
+/* 기사 설정 */
+.story {}
+.story h1 {font-size: 36px;
+            margin-bottom: 20px;
+            background-color: aqua;
+        /* 왜 마진을 쓰지 ???/ */
+        }
+.story h2 {margin-top: 40px;
+            border-left: 10px solid #7cbac1;
+            padding-left: 10px;
+            font-weight: normal;}
+.story img {max-width: 100%;}
+.story p {margin-top: 10px;
+            margin-bottom: 20px;}
+/* 특집 기사 설정 */
+.sidemenu {}
+.sidemenu {}
