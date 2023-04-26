@@ -1,4 +1,5 @@
 @charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Paytone+One&display=swap');
 /* 전체설정 */
 * {margin: 0;
     padding: 0;}
@@ -13,9 +14,11 @@ body {font-family: '맑은 고딕',
 .box4 {width: 30%;}
 /* 로고 설정 */
 .logo {}
-.logo h1 {font-weight: ;
-        font-size: 30px;}
-.logo h1 a {}
+.logo h1 {font-weight: normal;
+        font-size: 30px;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Paytone One', sans-serif;}
+.logo h1 a {color: #83a4a8;}
 /* 메뉴 설정 */
 .menu {}
 .menu ul {display: flex;}
@@ -36,6 +39,24 @@ body {font-family: '맑은 고딕',
 .story img {max-width: 100%;}
 .story p {margin-bottom: 20px;
             margin-top: 10px;}
+/* 기사 작성일 설정 */
+.storyinfo {margin-top: -10px;
+                margin-bottom: 20PX;}
+.storyinfo i {color: #AAA;
+                font-size: 18px;}
+.storyinfo time {}
+/* 기사의 카테고리 설정 */
+.story-cat {margin-bottom: 25px;}
+.story-cat ul {display: flex;
+                padding: 10px;}
+.story-cat ul li {margin-right: 5px;}
+.story-cat ul li a {background-color: #75dbe7;
+                color: #fff;
+                font-size: 12px;
+                display: block;
+                /* a는 인라인 블럭이라 상하 패딩 적용 x */
+                padding: 3px 5px;
+                border-radius: 2px;}
 /* 특집 기사 설정 */
 .sidemenu {margin-bottom: 30px;}
 .sidemenu h1 {font-weight: bold;
@@ -48,6 +69,8 @@ body {font-family: '맑은 고딕',
 .sidemenu ul li a {display: block;
             padding: 5px;
             font-size: 14px;}
+.sidemenu i {color: #888;
+                margin-right: 5px;}
 /* 추천 기사 설정 */
 .recommend {margin-bottom: 30px;}
 .recommend h1 {font-weight: bold;
@@ -56,10 +79,23 @@ body {font-family: '맑은 고딕',
             border-bottom: dotted 2px #ddd;
             margin-bottom: 10px;}
 .recommend ul {}
-.recommend ul li {}
-.recommend ul li a {display: block;
-            padding: 5px;
-            font-size: 14px;}
+.recommend ul li {margin-bottom: 10px;}
+.recommend ul li a {display: block; 
+                font-size: 14px;
+                position: relative;}
+.recommend img {width: 100%;
+                vertical-align: top; 
+        /* vertical-align - 
+        (상,하,좌,우)를 기준으로 붙어있어라 */
+        }
+.recommend .txt {background-color: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                padding: 5px 10px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                box-sizing: border-box;}
 /* 인기 기사 설정 */
 .popular {}
 .popular h1 {font-weight: bold;

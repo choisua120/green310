@@ -31,7 +31,6 @@ a {text-decoration: none;
 .story {}
 .story h1 {font-size: 36px;
             margin-bottom: 20px;
-            background-color: aqua;
         /* 왜 마진을 쓰지 ???/ */
         }
 .story h2 {margin-top: 40px;
@@ -41,6 +40,46 @@ a {text-decoration: none;
 .story img {max-width: 100%;}
 .story p {margin-top: 10px;
             margin-bottom: 20px;}
+/* 기사의 카테고리 설정 */
+.story-cat {margin-bottom: 25px;}
+.story-cat ul {display: flex;
+            padding: 10px;}
+.story-cat ul li {margin-right: 5px;}
+.story-cat ul li a {background-color: #75dbe7;
+            color: #fff;
+            font-size: 12px;
+            display: inline;
+            padding: 3px 5px;
+            border-radius: 2px}
+/* 기사 작성일 설정 */
 /* 특집 기사 설정 */
-.sidemenu {}
-.sidemenu {}
+.sidemenu {margin-bottom: 30px;}
+.sidemenu h1 {font-weight: bold;
+            font-size: 18px;
+            color: #666;
+            border-bottom: dotted 2px #ddd;
+            margin-bottom: 10px;}
+.sidemenu ul {}
+.sidemenu ul li {}
+/* 추천 기사 설정 */
+.recommend {margin-bottom: 30px;}
+.recommend h1 {font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.recommend ul {}
+.recommend ul li {}
+/* 인기 기사 설정 */
+.popular {}
+.popular h1 {font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.popular ul {}
+.popular ul li {}
+/* 카피라이트 설정 */
+.copyright {font-size: 14px;
+            color: #666;}
+.box5 {border-top: solid 1px #ddd;}
