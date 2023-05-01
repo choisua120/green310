@@ -1,0 +1,13 @@
+@charset 'utf-8' ;
+/* header 컨텐츠 */
+header {background-color: #fff;}
+header h1 {position: absolute;
+    width: 180px;
+    height: 136px;
+    background-image: url(../img/logo1.png);
+    text-indent: -99999px;
+    left: 50%;}
+.gnb {}
+.gnb li {}
+.gnb a {}
+.gnb i {}
