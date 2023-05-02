@@ -358,18 +358,19 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
 }
-
 /* 박스의 왼쪾 오른쪽 공백 확보 */
 .box1, .boxA, .copyright {padding-left: 10px;
-        padding-right: 10px;}
+    padding-right: 10px;}
 /* 미디어쿼리구간 설정///////////////////////////////////////////// */
 
 
 /* 1.모바일 구간
- 599px 이하 구간///////////////////////////////////// */
+599px 이하 구간///////////////////////////////////// */
 @media (max-width:599px){
-        /* css설정구간 */
+    /* css설정구간 */
 
+그니까 ㅂ통 600부터 모바일임 ㅇㅇ
+min 599 = 599 이하 구간 
 
 }
 /* 2.태블릿 이하 구간 
@@ -383,23 +384,23 @@ body {
 /* 3.태블릿~데스크탑 구간 
 768px 이상 구간/////////////////////////////////// */
 @media (min-width:768px){
-        /* css설정구간 */
+    /* css설정구간 */
 /* 박스3과 박스4의 좌우간격 */
 .box3 {
-        padding-right: 50px;
-        box-sizing: border-box;
+    padding-right: 50px;
+    box-sizing: border-box;
 }
 /* 박스3과 박스4의 가로정렬 */
 .boxA {
-        display: flex;
+    display: flex;
 }
 
 .box3 {
-        width: 70%;
+    width: 70%;
 }
 
 .box4 {
-        width: 30%;
+    width: 30%;
 }
 
 
@@ -413,8 +414,8 @@ body {
 .boxA,
 .menu,
 .copyright {
-        width: 1000px;
-        margin: 0 auto;
+    width: 1000px;
+    margin: 0 auto;
 }
 /* div는 블럭이라서 100% */
 
