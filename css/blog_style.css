@@ -209,6 +209,7 @@ body {
 
 .ralation ul {
         display: flex;
+        flex-wrap: wrap;
 }
 
 .ralation ul li {
@@ -222,7 +223,7 @@ body {
 }
 
 .ralation img {
-        max-width: 100%;
+        width: 100%;
 }
 
 .ralation .txt {}
@@ -365,11 +366,25 @@ body {
 /* 미디어쿼리구간 설정///////////////////////////////////////////// */
 
 
+
 /* 1.모바일 구간
  599px 이하 구간///////////////////////////////////// */
 @media (max-width:599px){
         /* css설정구간 */
+        /* 메뉴설정 */
+.menu ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 10px;
+}
 
+        /* snsset 설정 */
+.snsSet span {text-indent: -9999px;
+                display: inline-block;}
+        /* 관련기사 설정 */
+        .ralation ul li {
+                width: 50%;
+        }
 
 }
 /* 2.태블릿 이하 구간 
