@@ -43,7 +43,65 @@ nav a:nth-child(3) {position: absolute;
 nav a:nth-child(4) {position: absolute;
     right: 10px;
     top: 5px;}
-
+/* article 내부 설정 */
+article>div {width: 100%;
+            height: 100%;
+            position: relative;}
+/* 배경이미지 삽입 구간 설정*/
+article .bg {background-size: cover;
+            /* 배경 사진 조절 
+            cover - 사진을 박스 크기에 맞춤
+            contain - 박스를 사진 크기에 맞춤*/
+            background-repeat: no-repeat;
+            background-position: center center;
+            overflow: hidden;
+        /* 오ㅐ gb에다 해요?... */}
+article .bg1 {background-image: url(../img/pic1.jpg);}
+article .bg2 {background-image: url(../img/pic2.jpg);}
+article .bg3 {background-image: url(../img/pic3.jpg);}
+article .bg4 {background-image: url(../img/pic4.jpg);}
+article .bg5 {background-image: url(../img/pic5.jpg);}
+article .bg6 {background-image: url(../img/pic6.jpg);}
+article .bg7 {background-image: url(../img/pic7.jpg);}
+article .bg span {font-size: 60px;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                right: 20px;
+                transform: scale(10);
+                opacity: 0;
+                transition: all 0.6s;}
+                /* transition - 서서히 변화하라는 명령어 
+                속성명으로 하나하나 지시하거나 모든 속성을 불러 지시
+                움직이는 속도를 초단위로 표시한다 
+                시작을 알리는 선택자에 넣는다 
+                hover값의 동적인 요소를 만들 때 사용한다*/
+                article .bg:hover span {transform: scale(1);
+                opacity: 1;}
+/* 텍스트 영역 설정 */
+article .txt {color: #666;
+            background-color: #fff;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            transition: background-color 1s;}
+            article .txt:hover {background-color: #6ce2fb;
+            color: #fff;}
+article .txt strong {display: block;
+                    font-size: 30px;}
+article .txt em {}
+article:nth-child(3) .txt {background-color: #bff7fa;}
+/* txt 중에서 .txt2 이름을 갖고있는 선택자 */
+article .txt.txt2 {background-color: #e3f1fb;}
+article p {z-index: 1;
+        position: relative;}
+article .txt i {position: absolute;
+                font-size: 220PX;
+                color: #b2effc;
+                right: -200px;
+                transition: all 0.7s;
+                z-index: 0;}
+article:nth-child(3) i {right: 20px;}
+article .txt:hover i {right: 0;}
 /*                                              미디어 쿼리 구간                                          */
 /*              2.480~639 구간                 */
 /* 2.480 ~ 639까지구간 */
@@ -144,7 +202,7 @@ nav a:nth-child(4) {position: absolute;
 @media (min-width:1280px) and (max-width:1599px) {
 /*     css 설정 구간     */
 header {}
-header h1 {
+header h1 {position: absolute;
     width: 200px;
     height: 40px;
     background-image: url(../img/logo2.png);
