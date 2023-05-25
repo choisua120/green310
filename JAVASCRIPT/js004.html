@@ -40,11 +40,14 @@
         당신의 평균점수는 <span id="ave">00</span> 입니다.
     </div>
     <div class="box3">
+        당신의 학점은 <span id="stu">00</span> 입니다
+    </div>
+    <!-- <div class="box3">
         과학 : <span id="sicSc">0</span> 학점<br>
         수학 : <span id="matSc">0</span> 학점<br>
         영어 : <span id="engSc">0</span> 학점<br>
         국어 : <span id="korSC">0</span> 학점<br>
-    </div>
+    </div> -->
 
     <script>
         let sic = Number(prompt('당신의 과학점수를 입력하세요.'))
@@ -62,27 +65,61 @@
         addRe.textContent=add
         aveRe.textContent=ave
 
-        
-        if(sic>=90){
-            let sicSc =document.getElementById('sicSc')
-            sicSc.textContent='A'
+        //조건문 생성
+        if(ave>=90){
+            stu.textContent='A'
         }
-        else if(sic>80 && score<=89){
-            let sicSc =document.getElementById('sicSc')
-            sicSc.textContent='B'
+        else if (ave<90 && ave>=80){
+            stu.textContent='B'
         }
-        else if(sicSc>70 && score<=79){
-            let sicSc =document.getElementById('sicSc')
-            sicSc.textContent='C'
+        else if (ave<80 && ave>=70){
+            stu.textContent='C'
         }
-        else if(sicSc>60 && score<=69){
-            let sicSc =document.getElementById('sicSc')
-            sicSc.textContent='D'
+        else if (ave<70 && ave>=60){
+            stu.textContent='D'
         }
-        else {
-            let sicSc =document.getElementById('sicSc')
-            sicSc.textContent='F'
-        }
+        else (stu.textContent='F')
+        // if(sic>=90){
+        //     let sicSc =document.getElementById('sicSc')
+        //     sicSc.textContent='A'
+        // }
+        // else if(sic>80 && sic<=89){
+        //     let sicSc =document.getElementById('sicSc')
+        //     sicSc.textContent='B'
+        // }
+        // else if(sicSc>70 && score<=79){
+        //     let sicSc =document.getElementById('sicSc')
+        //     sicSc.textContent='C'
+        // }
+        // else if(sicSc>60 && score<=69){
+        //     let sicSc =document.getElementById('sicSc')
+        //     sicSc.textContent='D'
+        // }
+        // else {
+        //     let sicSc =document.getElementById('sicSc')
+        //     sicSc.textContent='F'
+        // }
+
+        // if(mat>=90){
+        //     let matSc =document.getElementById('matSc')
+        //     matSc.textContent='A'
+        // }
+        // else if(sic>80 && score<=89){
+        //     let matSc =document.getElementById('matSc')
+        //     matSc.textContent='B'
+        // }
+        // else if(sicSc>70 && score<=79){
+        //     let matSc =document.getElementById('matSc')
+        //     matSc.textContent='C'
+        // }
+        // else if(sicSc>60 && score<=69){
+        //     let matSc =document.getElementById('matSc')
+        //     matSc.textContent='D'
+        // }
+        // else {
+        //     let matSc =document.getElementById('matSc')
+        //     matSc.textContent='F'
+        // }
     
     
 
