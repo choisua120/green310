@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트_이벤트</title>
+        <!-- 자바스크립트 -->
+        <script>
+            window.onload =function(){
+                const btn= document.getElementById('btn')
+                const ti1= document.getElementById("ti1"),
+                    list= document.querySelector('ul')
+                    listli= document.querySelector('li')
+                        console.log('listli')
+                const li1=list.children[0],
+                    li2=list.children[1],
+                    li3=list.children[2],
+                    li4=list.children[3],
+                    li5=list.children[4],
+                    li6=list.children[5],
+                    li7=list.children[6]
+
+                btn.onclick=function(){
+                    alert('클릭하셨습니다.')
+                }
+                ti1.onmouseenter=function(){
+                    ti1.style.backgroundColor='red'
+                }
+                ti1.onmouseout=function(){
+                    ti1.style.backgroundColor='transparent'
+                }
+                li1.onmouseenter=function(){
+                    li1.style.backgroundColor='red'
+                }
+                li2.onmouseenter=function(){
+                    li1.style.backgroundColor='orange'
+                    li2.style.backgroundColor='orange'
+                }
+                li3.onmouseenter=function(){
+                    li1.style.backgroundColor='yellow'
+                    li2.style.backgroundColor='yellow'
+                    li3.style.backgroundColor='yellow'
+                }
+                li4.onmouseenter=function(){
+                    li1.style.backgroundColor='green'
+                    li2.style.backgroundColor='green'
+                    li3.style.backgroundColor='green'
+                    li4.style.backgroundColor='green'
+                }
+                li5.onmouseenter=function(){
+                    li1.style.backgroundColor='blue'
+                    li2.style.backgroundColor='blue'
+                    li3.style.backgroundColor='blue'
+                    li4.style.backgroundColor='blue'
+                    li5.style.backgroundColor='blue'
+                }
+                li6.onmouseenter=function(){
+                    li1.style.backgroundColor='navy'
+                    li2.style.backgroundColor='navy'
+                    li3.style.backgroundColor='navy'
+                    li4.style.backgroundColor='navy'
+                    li5.style.backgroundColor='navy'
+                    li6.style.backgroundColor='navy'
+                }
+                li7.onmouseenter=function(){
+                    li1.style.backgroundColor='purple'
+                    li2.style.backgroundColor='purple'
+                    li3.style.backgroundColor='purple'
+                    li4.style.backgroundColor='purple'
+                    li5.style.backgroundColor='purple'
+                    li6.style.backgroundColor='purple'
+                    li7.style.backgroundColor='purple'
+                }
+                list.onmouseout=function(){
+                }
+            };
+            
+        </script>
+</head>
+<body>
+    <h1 id="ti1">자바스크립트_이벤트</h1>
+    <p>
+        이벤트는 키보드를 누르거나 클릭하는 것처럼 
+        어떤 현상이 프로그램에 영향을 미치는 것을 말합니다.
+    </p>
+    <ul>
+        <li>마우스이벤트</li>
+        <li>키보드이벤트</li>
+        <li>HTML 프레임 이벤트</li>
+        <li>HTML 입력양식이벤트</li>
+        <li>사용자인터페이스이벤트</li>
+        <li>구조변화이벤트</li>
+        <li>터치이벤트</li>
+    </ul>
+    <p>
+        작성법<br>
+        일반적인 방식 : window.onload = function(){실행문}
+    </p>
+    <p>
+        설명 window는 선택자의 자리, onload는 이벤트속성이라는 
+        이름으로 on을 제외한 load가 이벤트 이름 또는 이벤트타입이라 불리고,
+        이벤트 속성에 넣은 함수를 이벤트리스너 또는 이벤트핸들러라고 한다.
+    </p>
+    <button id="btn">클릭</button>
+    <h2>추가선택자</h2>
+    <p>id값을 매번 HTML 요소에 추가하는데 불편함이 있음
+        getElementById 값 대신에
+        querySelector 또는 querySelectorAll이라는 객체로 불러낼 수 있다. <br>
+        이떄, querySelector는 html태그 중 중복요소가 있을 시 맨 처음에 있는
+        요소만 부르고, querySelectorAll은 모든 요소를 부른다.
+    </p>
+</body>
+</html>
