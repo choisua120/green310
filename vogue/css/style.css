@@ -1,0 +1,73 @@
+@charset 'utf-8';
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+img {
+    vertical-align: bottom;
+}
+/* 전체화면설정 */
+#wrap {
+    width: 100%;
+    /* 레이아웃이 틀어짐을 방지하고 
+    일정 넓이와 높이 이하로는 컨텐츠가 줄어들지 않도록 
+    설정하기 위해 최소값을 정해준다  */
+    min-width: 1024px;
+    height: 100%;
+    position: fixed;
+    background-color:#000;
+    left: 0;
+    top: 0;
+    perspective: 500px;
+}
+/* 메뉴버튼설정 */
+#wrap em {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    position: fixed;
+    top: 50px;
+    left: 40px;
+    z-index: 999;
+}
+/* 네비설정 */
+#wrap nav {
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    background-color: #eee;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: all 0.8s;
+    transform-origin: left;
+    transform: rotateY(120deg);
+    opacity: 0;
+}
+
+/* 섹션설정 */
+#wrap section {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: skyblue;
+    z-index: 1;
+    transform-origin: right;
+    transition: all 0.5s;
+}
+/* 변환모습 */
+#wrap nav.on {
+    transform: rotateY(15deg);
+    opacity: 1;
+}
+#wrap section.on {
+    transform: rotateY(-5deg);
+}
